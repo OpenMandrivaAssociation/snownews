@@ -13,6 +13,7 @@ Url:		http://kiza.kcore.de/software/snownews/
 Group:     	Networking/News	
 Source0:    	http://kiza.kcore.de/software/snownews/download/%{name}-%{version}.tar.bz2
 Source1:    	%{name}.bash-completion.bz2
+BuildRoot: 	%{_tmppath}/%{name}-buildroot
 BuildRequires:	ncurses-devel
 BuildRequires:	libxml2-devel
 
