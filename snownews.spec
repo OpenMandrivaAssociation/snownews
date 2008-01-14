@@ -2,7 +2,7 @@
 # locales
 %define name	snownews
 %define version 1.5.8
-%define rel     1
+%define rel     2
 
 Name:		%{name}
 Version:	%{version}
@@ -16,6 +16,7 @@ Source1:    	%{name}.bash-completion.bz2
 BuildRoot: 	%{_tmppath}/%{name}-buildroot
 BuildRequires:	ncurses-devel
 BuildRequires:	libxml2-devel
+BuildRequires:  libncursesw-devel
 
 %description
 Snownews is a text mode RSS/RDF newsreader.
@@ -27,7 +28,7 @@ they propose a RSS newsfeed.
 bzcat %{SOURCE1} > %{name}.bash-completion
 
 %build
-./configure --prefix=%_prefix
+./configure --prefix=%_prefix --charset=UTF-8
 %make
 
 %install
