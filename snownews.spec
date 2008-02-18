@@ -7,7 +7,7 @@
 Name:		%{name}
 Version:	%{version}
 Release:	%mkrel %{rel}
-Summary: 	Snownews is a text mode RSS/RDF newsreader
+Summary: 	Text mode RSS/RDF newsreader
 License:	GPL
 Url:		http://kiza.kcore.de/software/snownews/
 Group:     	Networking/News
