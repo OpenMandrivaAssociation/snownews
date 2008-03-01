@@ -1,8 +1,8 @@
 # TODO man pages translation
 # locales
 %define name	snownews
-%define version 1.5.8
-%define rel     2
+%define version 1.5.9
+%define rel     1
 
 Name:		%{name}
 Version:	%{version}
@@ -11,7 +11,7 @@ Summary: 	Text mode RSS/RDF newsreader
 License:	GPL
 Url:		http://kiza.kcore.de/software/snownews/
 Group:     	Networking/News
-Source0:    	http://kiza.kcore.de/software/snownews/download/%{name}-%{version}.tar.bz2
+Source0:    	http://kiza.kcore.de/software/snownews/download/%{name}-%{version}.tar.gz
 Source1:    	%{name}.bash-completion.bz2
 BuildRoot: 	%{_tmppath}/%{name}-buildroot
 BuildRequires:	ncurses-devel
