@@ -1,7 +1,7 @@
 # TODO man pages translation
 # locales
 %define name	snownews
-%define version 1.5.9
+%define version 1.5.10
 %define rel     1
 
 Name:		%{name}
@@ -11,7 +11,7 @@ Summary: 	Text mode RSS/RDF newsreader
 License:	GPL
 Url:		http://kiza.kcore.de/software/snownews/
 Group:     	Networking/News
-Source0:    	http://kiza.kcore.de/software/snownews/download/%{name}-%{version}.tar.gz
+Source0:    	http://kiza.kcore.de/software/snownews/download/%{name}-%{version}.tar.bz2
 Source1:    	%{name}.bash-completion.bz2
 BuildRoot: 	%{_tmppath}/%{name}-buildroot
 BuildRequires:	ncurses-devel
@@ -28,7 +28,7 @@ they propose a RSS newsfeed.
 bzcat %{SOURCE1} > %{name}.bash-completion
 
 %build
-./configure --prefix=%_prefix --charset=UTF-8
+./configure --prefix=%_prefix
 %make
 
 %install
