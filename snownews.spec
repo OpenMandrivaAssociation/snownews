@@ -1,7 +1,7 @@
 # TODO man pages translation
 # locales
 %define name	snownews
-%define version 1.5.11
+%define version 1.5.12
 %define rel     1
 
 Name:		%{name}
