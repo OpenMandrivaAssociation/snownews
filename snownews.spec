@@ -2,7 +2,7 @@
 # locales
 %define name	snownews
 %define version 1.5.12
-%define rel     1
+%define rel     2
 
 Name:		%{name}
 Version:	%{version}
