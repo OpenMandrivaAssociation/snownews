@@ -2,13 +2,12 @@
 # locales
 %define name	snownews
 %define version 1.5.12
-%define rel     2
 
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel %{rel}
+Release:	%mkrel 1
 Summary: 	Text mode RSS/RDF newsreader
-License:	GPL
+License:	GPLv2
 Url:		http://kiza.kcore.de/software/snownews/
 Group:     	Networking/News
 Source0:    	http://kiza.kcore.de/software/snownews/download/%{name}-%{version}.tar.bz2
@@ -17,6 +16,7 @@ BuildRoot: 	%{_tmppath}/%{name}-buildroot
 BuildRequires:	ncurses-devel
 BuildRequires:	libxml2-devel
 BuildRequires:  libncursesw-devel
+BuildRequires:  openssl-devel
 
 %description
 Snownews is a text mode RSS/RDF newsreader.
