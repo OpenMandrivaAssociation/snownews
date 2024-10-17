@@ -8,7 +8,7 @@ Version:	%{version}
 Release:	%mkrel 3
 Summary: 	Text mode RSS/RDF newsreader
 License:	GPLv2
-Url:		http://kiza.kcore.de/software/snownews/
+Url:		https://kiza.kcore.de/software/snownews/
 Group:     	Networking/News
 Source0:    	http://kiza.kcore.de/software/snownews/download/%{name}-%{version}.tar.bz2
 Source1:    	%{name}.bash-completion.bz2
