@@ -13,6 +13,11 @@ Group:     	Networking/News
 Source0:    	http://kiza.kcore.de/software/snownews/download/%{name}-%{version}.tar.bz2
 Source1:    	%{name}.bash-completion.bz2
 BuildRoot: 	%{_tmppath}/%{name}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	ncurses-devel
 BuildRequires:	libxml2-devel
 BuildRequires:  libncursesw-devel
